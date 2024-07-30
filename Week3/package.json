@@ -1,0 +1,22 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "SIT725 Week 3 Tasks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thestranger13/SIT725.git"
+  },
+  "author": "Camille Ang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thestranger13/SIT725/issues"
+  },
+  "homepage": "https://github.com/thestranger13/SIT725#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

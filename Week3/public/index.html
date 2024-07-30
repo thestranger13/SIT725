@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT725 Task 3.2P</title>
+<!--link to Materialise & CSS-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<link rel = "stylesheet" href = "css/styles.css">
+
+</head>
+<body>
+    <!-- navigation bar-->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Vehicle Checker</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Checker</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Is My Vehicle Registered?</h1>
+    </header>
+
+    <!-- Vehicle Checker-->
+        <main>
+            <form id="vehicle-form">
+                <label for="vehicle">Enter Vehicle Number (6 digits only):</label>
+                <input type="text" id="vehicle" name="vehicle" maxlength="6" pattern="\d{6}" required>
+                <button type="submit">Check</button>
+            </form>
+            <p id="result"></p>
+
+    <!-- Materialize Cards -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/LandroverLeft.jpg" alt="Landrover Left">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/LegoCentre.jpg" alt="Legoman">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/LandroverRight.webp" alt="Landrover Right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+<footer>
+        <p>&copy; 2024 Camille Ang</p>
+</footer>
+
+<!--link to Custom Javascript-->
+<script src="js/scripts.js"></script>
+    
+</body>
+</html>
