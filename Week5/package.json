@@ -1,0 +1,29 @@
+{
+  "name": "week5",
+  "version": "1.0.0",
+  "description": "SIT725 Task 5.2C MVC Strategy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thestranger13/SIT725.git"
+  },
+  "author": "Camille Ang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thestranger13/SIT725/issues"
+  },
+  "homepage": "https://github.com/thestranger13/SIT725#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0"
+  }
+}
