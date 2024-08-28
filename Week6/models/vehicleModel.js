@@ -2,22 +2,22 @@
 const { getCollection } = require('../startServer');
 
 // function to find the vehiclenumber from database
-async function findVehicle(vehicleNumber) {
-    const collection = getCollection();
-    return await collection.findOne({ vehicleNumber });
-}
+exports.findVehicle = async (vehicleNumber) => {
+    const collection = getCollection('vehicles');
+    return await collection.findOne({ vehicleNumber: vehicleNumber });
+};
 
 // function to insert the vehicle number 
-async function saveVehicle(vehicleNumber) {
-    const collection = getCollection();
+exports.saveVehicle = async (vehicleNumber) => {
+    const collection = getCollection('vehicles');
     return await collection.insertOne({ vehicleNumber });
-}
+};
 
 // function to retrieve all vehicle numbers in the database
-async function getAllVehicles() {
-    const collection = getCollection();
+exports.getAllVehicles = async () => {
+    const collection = getCollection('vehicles');
     return await collection.find({}).toArray();
-}
+};
 
 // export the functions to allow it to be reused  
-module.exports = { findVehicle, saveVehicle, getAllVehicles };
+// module.exports = { findVehicle, saveVehicle, getAllVehicles };
